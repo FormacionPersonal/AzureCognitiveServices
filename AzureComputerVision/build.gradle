@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'cursoazure.t3.computervision.ComputerVisionInfo'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+    implementation 'com.microsoft.azure.cognitiveservices:azure-cognitiveservices-computervision:1.0.6-beta' 
+}

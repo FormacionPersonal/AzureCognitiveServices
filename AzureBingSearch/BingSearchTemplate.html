@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+    <meta charset="iso-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Sesión 7 - Azure Cognitive Services</title>
+    <link rel="stylesheet" href="css/main.css" />    
+</head>
+<body>
+    <h1>Azure Cognitive Services - Bing Search</h1>
+    <div>
+        <script type="text/javascript"; id="bcs_js_snippet"; src="https://ui.customsearch.ai/api/ux/rendering-js?customConfig=c3a22a46-2f03-42b0-af21-953337094916&market=en-US&version=latest&q="> 
+        </script>
+    </div>
+
+    <h1>Resultados de la búsqueda: $bingSearchText$</h1>
+    <div>
+        <p>Se muestran los resultados de $alteredQuery$</p>
+        <p>¿Realmente querías buscar $alterationOverrideQuery$?</p>
+    </div>
+    
+    <h2>Páginas web</h2>
+    <diV>
+        <h3>
+            <a href="$webpageUrl$">$webpageName$</a>
+        </h3>
+        <p>$webpageSnippet$</p>            
+        <p>$webpageError$</p>
+    </diV>
+    
+
+    <h2>Imágenes</h2>
+    <diV>
+        <figure>
+            <a href="$imageUrl$"><img src="$imageThumbnail$"></a>
+            <figcaption>"$imageName$"</figcaption>                
+        </figure>
+        <p>$imageError$</p>
+    </diV>
+    
+    <h2>Videos</h2>
+    <diV>
+        $videoContent$
+        <p>$videoName$</p>
+        <p>$videoError$</p>
+    </diV>
+
+</body>
+</html>

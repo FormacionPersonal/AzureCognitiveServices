@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'cursoazure.t4.voiceservices.VoiceServicesAnalytics'
+
+repositories {
+    jcenter()
+    maven {
+        url = uri("https://csspeechstorage.blob.core.windows.net/maven")
+    }    
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+    implementation 'com.microsoft.azure.cognitiveservices:azure-cognitiveservices-textanalytics:1.0.2-beta'
+    implementation 'com.microsoft.azure.cognitiveservices:speech:1.12.1'
+}
